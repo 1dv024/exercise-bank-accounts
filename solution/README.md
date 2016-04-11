@@ -43,7 +43,7 @@ namespace BankAccounts
                 if (value < 0)
                 {
                     throw new ApplicationException(
-                        "The balance can not be set to a amount less than 0.");
+                        "The balance can not be set to an amount less than 0.");
                 }
                 _balance = value;
             }
