@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BankAccounts
 {
@@ -29,6 +25,8 @@ namespace BankAccounts
         {
             get { return _accountNumber; }
         }
+        // Alternativ som "expression bodied method":
+        // public int AccountNumber => _accountNumber;
 
         public double Balance
         {
@@ -48,6 +46,8 @@ namespace BankAccounts
         {
             get { return _name; }
         }
+        // Alt:
+        // public string Name => _name;
 
         // Metoder (methods)
         public double Deposit(double amount)
